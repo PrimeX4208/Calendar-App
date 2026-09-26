@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css">
+    <link rel="stylesheet" href="/static\style.css">
+</head>
+<body>
+
+    <div id="calendar"></div>
+
+    <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <input type="text" id="event-input" placeholder="Enter event">
+    <input type="checkbox" id="all-day-checkbox"> All Day
+        <input type="time" id="time-input">
+    <button id="save-btn">Save Event</button>
+    <ul id="event-list"></ul>
+
+</body>
+</html>
